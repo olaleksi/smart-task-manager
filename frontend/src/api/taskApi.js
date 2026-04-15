@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const API_URL = "http://localhost:5000/api/tasks";
-const API_URL = "https://smart-task-manager-production-99ac.up.railway.app/api/tasks";
+const API_URL = "https://smart-task-manager-production-99ac.up.railway.app/";
 export const getTasks = async () => {
   const { data } = await axios.get(API_URL);
   return data;
