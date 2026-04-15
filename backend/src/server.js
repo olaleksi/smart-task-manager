@@ -16,6 +16,11 @@ app.use(express.json());
 // dtabase connection
 await database();
 
+// Basic route for testing
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
+
   // Basic route for testing
   app.get('/api/health', (req, res) => {
     res.status(200).json({ status: 'OK', message: 'Server is running' });
